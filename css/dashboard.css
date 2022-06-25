@@ -1,0 +1,208 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+
+
+/*
+ * Global add-ons
+ */
+
+/*.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-relative-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+/*.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    /*background-color: #f5f5f5;
+    border-right: 1px solid #eee;*/
+ /* }
+}
+*/
+/* Sidebar navigation */
+/*.nav-sidebar {
+  margin-right: -21px;  20px padding + 1px border 
+  margin-bottom: 20px;
+  margin-left: -20px;
+  marg
+}
+.nav-sidebar > li > a {
+  padding: 28px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}*/
+
+
+/*
+ * Main content
+ */
+/*
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}*/
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+
+
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.navbar{
+  border: 0px;
+}
+body{
+  font-family:'Gotu', sans-serif;
+  letter-spacing: 0.2vw;
+}
+.sidebar {
+  margin: 0px;
+  padding: 0px;
+  top:0;
+  width: 14vw;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: show;
+  z-index: 99;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 1vh 2.2vh;
+  text-decoration: none;
+  /*padding-left: 1vw;*/
+
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #222222;
+  color: white;
+}
+.nav-link:active,.nav-link:visited,.nav-link:focused{
+  background-color: #222222;
+  color: white;
+}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.greycolor{
+  background-color: #f5f5f5;
+}
+.greycolor:hover{
+  background-color: #cacccf;
+}
+.sidebar-nav ul,.sidebar-nav ul li{
+  margin: 0px;
+  padding: 0px;
+  align-items: left;
+  width: 100%;
+  background-color: black;
+}
+
+.arrowcol[data-toggle].collapsed:before {
+    content: " ▾";
+    float: right;
+    font-size:1.5vh;
+
+}
+.arrowcol[data-toggle]:not(.collapsed):before {
+    content: " ▴";
+    float: right;
+    font-size:1.5vh;
+
+}
+.submenuli{
+ padding-left: 2vw;
+  font-size:1.3vh;
+  border-bottom: 1px white;
+}
